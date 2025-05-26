@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restaurant Menu (Table Version)</title>
+  <title>Café Bliss Menu</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fefefe;
+      background-color: #fafafa;
       margin: 0;
       padding: 0;
     }
 
     .menu-container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 30px;
       background-color: #fff;
@@ -23,13 +23,13 @@
 
     .menu-header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .menu-header h1 {
+      font-size: 42px;
+      color: #8e44ad;
       margin: 0;
-      font-size: 36px;
-      color: #d35400;
     }
 
     .menu-header p {
@@ -40,29 +40,45 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     caption {
       text-align: left;
-      font-size: 24px;
+      font-size: 26px;
       font-weight: bold;
       margin: 20px 0 10px;
       color: #2c3e50;
-      border-bottom: 2px solid #d35400;
+      border-bottom: 2px solid #8e44ad;
       padding-bottom: 5px;
     }
 
     th, td {
       padding: 12px;
       text-align: left;
+      vertical-align: top;
       border-bottom: 1px dotted #ccc;
     }
 
-    .price {
-      color: #27ae60;
+    th {
+      background-color: #f9f9f9;
+    }
+
+    .item-img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .item-name {
       font-weight: bold;
-      text-align: right;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .ingredients {
+      color: #666;
+      font-size: 14px;
     }
 
     @media screen and (max-width: 600px) {
@@ -72,18 +88,17 @@
       }
 
       tr {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
 
       td {
-        text-align: left;
-        padding: 8px 0;
+        padding: 10px 0;
+        display: block;
       }
 
-      .price {
-        text-align: left;
-        display: block;
-        margin-top: 4px;
+      .item-img {
+        width: 100%;
+        max-width: 300px;
       }
     }
   </style>
@@ -91,52 +106,75 @@
 <body>
   <div class="menu-container">
     <div class="menu-header">
-      <h1>Sultan Dine</h1>
-      <p>Delicious meals made with passion</p>
+      <h1>Café Bliss</h1>
+      <p>Where taste meets comfort</p>
     </div>
 
     <table>
-      <caption>Starters</caption>
+      <caption>Coffee & Beverages</caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td>Tomato Soup</td>
-          <td class="price">500 tk.</td>
+          <td><img src="Expresso.jpg" alt="Espresso" class="item-img" /></td>
+          <td class="item-name">Espresso</td>
+          <td class="ingredients">Finely ground coffee beans, hot water</td>
         </tr>
         <tr>
-          <td>Garlic Bread</td>
-          <td class="price">300 tk.</td>
+          <td><img src="Latte.jpg" alt="Latte" class="item-img" /></td>
+          <td class="item-name">Latte</td>
+          <td class="ingredients">Espresso, steamed milk, milk foam</td>
         </tr>
       </tbody>
     </table>
 
     <table>
-      <caption>Main Course</caption>
+      <caption>Snacks</caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td>Grilled Chicken</td>
-          <td class="price">1000 tk.</td>
+          <td><img src="Croissant.jpg" alt="Croissant" class="item-img" /></td>
+          <td class="item-name">Croissant</td>
+          <td class="ingredients">Butter, flour, sugar, yeast</td>
         </tr>
         <tr>
-          <td>Pasta</td>
-          <td class="price">800 tk.</td>
-        </tr>
-        <tr>
-          <td>Burger</td>
-          <td class="price">900 tk.</td>
+          <td><img src="Club Sandwich.jpg" alt="Sandwich" class="item-img" /></td>
+          <td class="item-name">Club Sandwich</td>
+          <td class="ingredients">Bread, chicken, lettuce, tomato, mayo</td>
         </tr>
       </tbody>
     </table>
 
     <table>
       <caption>Desserts</caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td>Chocolate Cake</td>
-          <td class="price">650 tk.</td>
+          <td><img src="Chocolate.jpg" alt="Brownie" class="item-img" /></td>
+          <td class="item-name">Chocolate Brownie</td>
+          <td class="ingredients">Cocoa, butter, eggs, sugar, flour</td>
         </tr>
         <tr>
-          <td>Vanilla Ice Cream</td>
-          <td class="price">400 tk.</td>
+          <td><img src="Cheesecake.jpg" alt="Cheesecake" class="item-img" /></td>
+          <td class="item-name">Cheesecake</td>
+          <td class="ingredients">Cream cheese, sugar, eggs, crust</td>
         </tr>
       </tbody>
     </table>
