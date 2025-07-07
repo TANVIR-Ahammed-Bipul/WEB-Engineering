@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name-inputs">
+        <input type="text" id="p1-name" placeholder="Enter Player 1 Name" />
+        <input type="text" id="p2-name" placeholder="Enter Player 2 Name" />
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <div class="score-board hide" id="score-board">
+        <p><span id="p1-display-name">Player 1</span> (X): <span id="p1-score">0</span></p>
+        <p><span id="p2-display-name">Player 2</span> (O): <span id="p2-score">0</span></p>
+    </div>
+
+    <div class="msg-container hide" id="turn-container">
+        <p id="turn-msg"></p>
+    </div>
+
+    <div class="msg-container hide" id="win-container">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">Reset Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
